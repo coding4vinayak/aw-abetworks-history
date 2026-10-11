@@ -1,5 +1,8 @@
 # aw-abetworks-history
 
+![CI](https://github.com/coding4vinayak/aw-abetworks-history/actions/workflows/ci.yml/badge.svg)
+
+
 The campaign ledger. One file, no code.
 
 `abetworks-improvements.txt` records 9251 lines of engineering decisions across the
