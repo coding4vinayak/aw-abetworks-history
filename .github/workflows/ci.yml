@@ -6,7 +6,7 @@ jobs:
   ledger:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: ledger file present and non-trivial
         run: |
           test -f abetworks-improvements.txt
