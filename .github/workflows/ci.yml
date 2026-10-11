@@ -1,0 +1,15 @@
+name: CI
+on:
+  push: { branches: [main] }
+  pull_request: { branches: [main] }
+jobs:
+  ledger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ledger file present and non-trivial
+        run: |
+          test -f abetworks-improvements.txt
+          lines=$(wc -l < abetworks-improvements.txt)
+          echo "ledger has $lines lines"
+          test "$lines" -gt 5000
